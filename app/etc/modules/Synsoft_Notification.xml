@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+ /**
+ * @author    Avinash Kumar - Magento Extension
+ *
+ * @package     Notification to Users 
+ * @category    Notification
+ * @copyright   Copyright 2013 Synsoft Global Inc()
+ * @version:    1.0.0
+ */
+-->
+<config>
+    <modules>
+        <Synsoft_Notification>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Synsoft_Notification>		
+    </modules>
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Notification</name>
+    <version>1.0.0.1</version>
+    <stability>stable</stability>
+    <license>123456</license>
+    <channel>local</channel>
+    <extends/>
+    <summary>Notification Extension</summary>
+    <description>This extension can be used by admin to send notification regarding new offer to multiple  customers</description>
+    <notes>Notification Extension</notes>
+    <authors><author><name>Avinash Kumar</name><user>avinash</user><email>avinashkr.synsoft@gmail.com</email></author></authors>
+    <date>2013-12-25</date>
+    <time>11:32:53</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Synsoft_Notification.xml" hash="cc2d1ae224f0822ffb5747dab9c8f0d7"/></dir></target><target name="magelocal"><dir name="Synsoft"><dir name="Notification"><dir name="Block"><dir name="Adminhtml"><dir name="Notification"><dir name="Edit"><file name="Form.php" hash="ede21cc136394cbce1bf9ae406f180ba"/><dir name="Tab"><file name="Form.php" hash="e960606b15fa6f9e6d285587a6b3259f"/><file name="vssver2.scc" hash="fe61be1f46b9e0635e488e2531082eaf"/></dir><file name="Tabs.php" hash="ace9d73fdf8a20933356cfeffdc2fff0"/><file name="vssver2.scc" hash="4eb4b408b663fc12fde4f52e7cd55b20"/></dir><file name="Edit.php" hash="d0e6b29bd27aa71f4eaaeaaece7d2a9f"/><dir name="Grid"><dir name="Renderer"><file name="CustomerDetail.php" hash="2358f6bf00b1dc2654348631566430f2"/></dir></dir><file name="Grid.php" hash="5ece6ae43f3ea1a08528881fa0be1e9e"/><file name="View.php" hash="edd6f57e2b600a86cff0d353df18b179"/></dir><file name="Notification.php" hash="8c1fcd26a8a6dda2fc52d3172ed7d8e6"/><file name="NotificationView.php" hash="34d342d1bb56f08ba81b4afac6ea965e"/></dir><file name="Notification.php" hash="f31956e272a73b36493142388010b6cc"/></dir><dir name="Helper"><file name="Data.php" hash="bf5bd03de84911f0eae7feb3e8478f1e"/></dir><dir name="Model"><dir name="Mysql4"><dir name="Notification"><file name="Collection.php" hash="fb2b8d0a107120d85cfc7c3948c42be9"/></dir><file name="Notification.php" hash="254b7b49c0a682ab30eb201c068a2d37"/></dir><file name="Notification.php" hash="b0ba52d3ffad4d4b78da79d585032238"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="NotificationController.php" hash="b8a8f45a2b67ff230324b8d80e319964"/></dir><file name="IndexController.php" hash="7662e1d814919cf6c7c60bd8c3942950"/></dir><dir name="etc"><file name="adminhtml.xml" hash="8ed0fc4da4617be34ab31cca5f750386"/><file name="config.xml" hash="49b49fccdb16b7827ae8e7faba31412a"/></dir><dir name="sql"><dir name="notification_setup"><file name="mysql4-install-0.1.0.php" hash="17ed2297b6e85d8c8c9b52789b535bd2"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="notification.xml" hash=""/></dir><dir name="template"><dir name="notification"><file name="notification.phtml" hash=""/><file name="notification_view.phtml" hash=""/></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="notification.xml" hash="e325052b578de078cde64fbb3c44e7e5"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.5.03</max></php></required></dependencies>
+</package>

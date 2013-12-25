@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category 	Notification
+ * @package 	Synsoft_Notification
+ * @author  	Synsoft Global Developer
+ */
+-->
+<layout version="0.1.0">
+    <notificationadmin_adminhtml_notification_index>
+        <reference name="content">
+           <block type="notification/adminhtml_notification" name="notification" />
+        </reference>
+    </notificationadmin_adminhtml_notification_index>
+	
+	<notificationadmin_adminhtml_notification_view>
+        <reference name="content">
+           <block type="notification/adminhtml_notificationView" name="notification_view" />
+        </reference>
+    </notificationadmin_adminhtml_notification_view>	
+	
+	<notificationadmin_adminhtml_notification_edit>
+        <reference name="head">
+            <action method="setCanLoadTinyMce">
+                <flag>1</flag>
+            </action>
+            <action method="addJs">
+                <script>mage/adminhtml/variables.js</script>
+            </action>
+            <action method="addJs">
+                <script>mage/adminhtml/wysiwyg/widget.js</script>
+            </action>
+            <action method="addJs">
+                <script>lib/flex.js</script>
+            </action>
+            <action method="addJs">
+                <script>lib/FABridge.js</script>
+            </action>
+            <action method="addJs">
+                <script>mage/adminhtml/flexuploader.js</script>
+            </action>
+            <action method="addJs">
+                <script>mage/adminhtml/browser.js</script>
+            </action>
+            <action method="addJs">
+                <script>prototype/window.js</script>
+            </action>
+            <action method="addItem">
+                <type>js_css</type>
+                <name>prototype/windows/themes/default.css</name>
+            </action>
+            <action method="addItem">
+                <type>js_css</type>
+                <name>prototype/windows/themes/magento.css</name>
+            </action>
+            <action method="addItem">
+                <type>js</type>
+                <name>mage/adminhtml/wysiwyg/tiny_mce/setup.js</name>
+                <params/>
+            </action>
+            <action method="addItem">
+                <type>js</type>
+                <name>tiny_mce/tiny_mce.js</name>
+                <params/>
+            </action>
+            <!-- <action method="addJs">
+                <script>magestore/bannerslider/tooltip.js</script>
+            </action>
+            <action method="addJs">
+                <script>magestore/bannerslider/prototip.js</script>
+            </action> -->
+        </reference>
+    </notificationadmin_adminhtml_notification_edit>
+</layout>

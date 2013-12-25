@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @category 	Notification
+ * @package 	Synsoft_Notification
+ * @author  	Synsoft Global Developer
+ */
+-->
+<config>
+	<menu>
+        <notification module="notification" translate="title">
+            <title>Notification Message</title>
+            <sort_order>100</sort_order>               
+            <children>
+                <notification module="notification" translate="title">
+                    <title>Send Notification</title>
+                    <sort_order>1</sort_order>
+                    <action>notificationadmin/adminhtml_notification</action>
+                </notification>  
+				<view module="notification" translate="title">
+                    <title>View Notification</title>
+                    <sort_order>2</sort_order>
+                    <action>notificationadmin/adminhtml_notification/view</action>
+                </view>
+            </children>
+        </notification>
+    </menu>
+	<acl>
+        <resources>
+            <admin>
+                <children>
+					<system>
+                        <children>
+                            <config>
+                                <children>
+                                    <notification module="notification" translate="title">
+                                        <title>Notification Message</title>
+                                        <sort_order>100</sort_order>									
+                                    </notification>								
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <notification module="notification" translate="title">
+						<title>Notification Message</title>
+						<sort_order>100</sort_order>
+						<children>
+							<notification module="notification" translate="title">
+								<title>Manage Notification</title>
+								<sort_order>1</sort_order>
+							</notification>  
+							<view module="notification" translate="title">
+								<title>View Notification</title>
+								<sort_order>2</sort_order>
+							</view>
+                        </children>
+                    </notification>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
